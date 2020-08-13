@@ -101,33 +101,39 @@ $(document).ready(function () {
 
 
     // keep this at the end of the JS/JQ
-});
 
-// the timer is now put on the back burner
-// classic dont know where to start so im going to build a timer 
-var timeEl = document.querySelector("#time");
-var mainEl = document.getElementById("main");
 
-var secondsLeft = 45;
+    // the timer is now put on the back burner
+    // classic dont know where to start so im going to build a timer 
+    var timeEl = document.querySelector("#time");
+    var mainEl = document.getElementById("main");
 
-// a working button ya thats right
-var click = document.querySelector("#tryme");
-click.addEventListener("click", function () {
+    var secondsLeft = 45;
     console.log('mark')
-    var timerInterval = setInterval(function () {
-        secondsLeft--;
-        timeEl.innerText = secondsLeft + " seconds left till ";
+    // a working button ya thats right
+    var click = document.querySelector("#tryme");
+    click.addEventListener("click", function () {
 
-        if (secondsLeft === 0) {
-            clearInterval(timerInterval);
-            sendMessage();
-        }
-        // this is the speed of the clock not the intervals
-    }, 1000);
+        var timerInterval = setInterval(function () {
+            secondsLeft--;
+            timeEl.innerText = secondsLeft + " seconds left till ";
+
+            if (secondsLeft === 0) {
+                clearInterval(timerInterval);
+                sendMessage("Time is up");
+            }
+
+            // this is the speed of the clock not the intervals
+        }, 1000);
+
+    })
+    console.log(click)
+});
+click = document.querySelector("#reset");
+click.addEventListener('click', function () {
+
 })
-console.log(click)
-
-
 
 // a working button ya thats right
 
+``
