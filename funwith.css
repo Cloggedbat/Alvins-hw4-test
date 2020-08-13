@@ -1,0 +1,37 @@
+
+
+p{
+    background-color: tomato;
+    display: inline-flex;
+    align-items: right;
+    justify-content: right;
+}
+
+
+
+} */
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+.btn{
+    background-color: tomato;
+    border-radius: .9em;
+}
+.btn:hover {
+    border-color: darkblue
+}
+.starter, .nexter {
+    font-size: larger;
+    color: chartreuse;
+    background-color: black;
+    padding: 10px 20px;
+}
+.hide{
+    display:none;
+}
+#fun {
+    padding: 5px;
+}

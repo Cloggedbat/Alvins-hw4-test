@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./funwith.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-light bg-light">
+        <a class="navbar-brand" id="time">this is where the score goes</a>
+        <form class="form-inline my-2 my-lg-0">
+            <p id="score">score</p>
+        </form>
+    </nav>
+    <div class="jumbotron col-sm-6 mx-auto" id="fun1">
+        <h1 class="display-4">Welcome</h1>
+        <br>
+        <br>
+        <button type="button" id="tryme" class="btn btn-primary btn-lg btn-block">Start</button>
+
+    </div>
+
+    <div class="jumbotron col-sm-6 mx-auto" id="fun2">
+        <h1 class="display-4" id='QU1'>Question 1</h1>
+        <br>
+        <br>
+        <button type="button" id="winner1" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        <button type="button" id="looser1" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        <button type="button" id="looser1" class="btn btn-primary btn-lg btn-block">Block level button</button>
+    </div>
+    <div class="jumbotron col-sm-6 mx-auto" id="fun3">
+        <h1 class="display-4" id='QU2'>Question 2</h1>
+        <br>
+        <br>
+        <button type="button" id="looser2" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        <button type="button" id="looser2" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        <button type="button" id="winner2" class="btn btn-primary btn-lg btn-block">Block level button</button>
+    </div>
+
+    <div class="jumbotron col-sm-6 mx-auto" id="fun4">
+        <h1 class="display-4" id='QU3'>Question 3</h1>
+        <br>
+        <br>
+        <button type="button" id="looser3" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        <button type="button" id="looser3" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        <button type="button" id="winner3" class="btn btn-primary btn-lg btn-block">Block level button</button>
+    </div>
+   
+    <div class="jumbotron col-sm-6 mx-auto" id="fun5">
+        <h1 class="display-4" id='QU4'>Question 4</h1>
+        <br>
+        <br>
+        <button type="button" id="looser4" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        <button type="button" id="winner4" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        <button type="button" id="looser4" class="btn btn-primary btn-lg btn-block">Block level button</button>
+    </div>
+    
+    <div class="jumbotron col-sm-6 mx-auto" id="endGame">
+        <h1 class="display-4">game over</h1>
+        <br>
+        <br>
+        <h1>thanks for playing</h1>
+        <button type="button" id="reset" onclick="clearInterval(click)"class="btn btn-primary btn-lg btn-block">Restart</button>
+    </div>
+    <!-- <nav class="navbar fixed-bottom navbar-light bg-light">
+        <a class="navbar-brand" href="#">Fixed bottom</a>
+      </nav> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
