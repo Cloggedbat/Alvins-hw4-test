@@ -1,15 +1,16 @@
 
-
 p{
     background-color: tomato;
     display: inline-flex;
     align-items: right;
     justify-content: right;
 }
+body{
+    background: url(./clands\ \(2\).JPG);
+    background-size: 1500px;
+}
 
-
-
-} */
+ 
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -34,4 +35,30 @@ p{
 }
 #fun {
     padding: 5px;
+}
+#highscore{
+    border-radius: 80px;
+    height: 300pxpx;
+}
+#fun1 {
+    margin-top: 5px;
+}
+h1 {
+    font-size: 20px;
+}
+#highscore {
+    height: 500px;
+}
+.jumbotron {
+    
+    background: rgba(0,0,0,0.6) 0%;
+}
+h1, h2 {
+    color:gold;
+}
+#score{
+    color: black;
+}
+#well {
+    color: black;
 }
