@@ -185,7 +185,10 @@ $(document).ready(function () {
     });
 
 
-  
+    let HS1 = document.querySelector ("#HS")
+    $(HS1).html(localStorage.getItem("highscore"))
+    $("#scoreup").empty();
+
   
 //  var secondsLeft = 100;
 
