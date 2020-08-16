@@ -179,7 +179,10 @@ $(document).ready(function () {
         $('#highscore').show(); $('#endGame').hide();
         localStorage.setItem("highscore", scoreup)
     });
-
+    $('#reset1').on('click', function () {
+        $('#fun1').show(); $('#highscore').hide();
+        localStorage.setItem("highscore", scoreup)
+    });
 
     let HS1 = document.querySelector ("#HS")
     $(HS1).html(localStorage.getItem("highscore"))
