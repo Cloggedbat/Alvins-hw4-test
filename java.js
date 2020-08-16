@@ -181,13 +181,12 @@ $(document).ready(function () {
     // final question button known as #endgame  
     $('#reset').on('click', function () {
         $('#highscore').show(); $('#endGame').hide();
-        loacalStorage.setItem("high-score", scoreup)
+        localStorage.setItem("highscore", scoreup)
     });
 
-    $('#showscore').on('click',function(){
-        var highup = localStorage.getItem('high-score')
-        $('high-score').html(highscore)
-    })
+
+  
+  
 //  var secondsLeft = 100;
 
     // the timer is now put on the back burner
@@ -203,7 +202,7 @@ $(document).ready(function () {
 
         let timerInterval = setInterval(function () {
             secondsLeft--;
-            timeEl.innerText = secondsLeft + " Your ";
+            timeEl.innerText = secondsLeft + " Your time ";
 
             if (secondsLeft <= 0) {
                 clearInterval(timerInterval);
@@ -218,40 +217,7 @@ $(document).ready(function () {
 
     })
         
+});   
    
    
-   
-
-
-
-    //    function endGame(){
-//     clearInterval(timerInterval);
-//     if (secondsLeft===0)
-//     $('#highscore').show(); $('div#fun2,#fun3,#fun4,#fun5,#fun6,#fun7,#fun8,#fun9,#fun10,#fun11').hide();
-//    } if(secondsLeft === -1){
-//     clearInterval(timerInterval);
-//     sendMessage("Time is up");
-
-    
-    
-    
-    //  function endgame (){
-        //     clearInterval(timerInterval);
-
-        //     localStorage.setItem("highscore", scoreCurrent):
-
-        //  }
-    
-
-});
-// saveScoreCard()
-
-
-
-// function saveScoreCard(){
-//  localStorage.setItem("score", scoreup)
-//    localStorage.getItem 
-
-
-
 
