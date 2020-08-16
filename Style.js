@@ -24,7 +24,7 @@ $(document).ready(function () {
     });
     // losses will be move you to the next question
     $("#looser1,#looser5").on('click', function () {
-        secondsLeft = secondsLeft - 10
+        secondsLeft = secondsLeft - 3
         $('#time').html(secondsLeft);
         scoreup = scoreup - 1
         $('#score').html(scoreup);
@@ -41,7 +41,7 @@ $(document).ready(function () {
 
     });
     $("#looser2,#looser6").on('click', function () {
-        secondsLeft = secondsLeft - 10
+        secondsLeft = secondsLeft - 3
         $('#time').html(secondsLeft);
         scoreup = scoreup - 1
         $('#score').html(scoreup);
@@ -58,7 +58,7 @@ $(document).ready(function () {
     });
 
     $("#looser3,#looser7").on('click', function () {
-        secondsLeft = secondsLeft - 10
+        secondsLeft = secondsLeft - 3
         $('#time').html(secondsLeft);
         scoreup = scoreup - 1
         $('#score').html(scoreup);
@@ -76,7 +76,7 @@ $(document).ready(function () {
     });
 
     $("#looser4,#looser8").on('click', function () {
-        secondsLeft = secondsLeft - 10
+        secondsLeft = secondsLeft - 3
         $('#time').html(secondsLeft);
         scoreup = scoreup - 1
         $('#score').html(scoreup);
@@ -86,8 +86,6 @@ $(document).ready(function () {
     // this is home
     //  question five
     $('#winner5').on('click', function () {
-        secondsLeft = secondsLeft - 10
-        $('#time').html(secondsLeft);
         scoreup = scoreup + 1
         $('#score').html(scoreup);
         $('#fun7').show(); $('#fun6').hide();
@@ -101,15 +99,13 @@ $(document).ready(function () {
     });
     // question 6
     $('#winner6').on('click', function () {
-        secondsLeft = secondsLeft - 10
-        $('#time').html(secondsLeft);
         scoreup = scoreup + 1
         $('#score').html(scoreup);
         $('#fun8').show(); $('#fun7').hide();
 
     });
     $("#looser12,#looser11").on('click', function () {
-        secondsLeft = secondsLeft - 10
+        secondsLeft = secondsLeft - 3
         $('#time').html(secondsLeft);
         scoreup = scoreup - 1
         $('#score').html(scoreup);
@@ -124,7 +120,7 @@ $(document).ready(function () {
 
     });
     $("#looser13,#looser14").on('click', function () {
-        secondsLeft = secondsLeft - 10
+        secondsLeft = secondsLeft - 3
         $('#time').html(secondsLeft);
         scoreup = scoreup - 1
         $('#score').html(scoreup);
@@ -138,7 +134,7 @@ $(document).ready(function () {
         $('#fun10').show(); $('#fun9').hide();
     });
     $("#looser15,#looser16").on('click', function () {
-        secondsLeft = secondsLeft - 10
+        secondsLeft = secondsLeft - 3
         $('#time').html(secondsLeft);
         scoreup = scoreup - 1
         $('#score').html(scoreup);
@@ -153,7 +149,7 @@ $(document).ready(function () {
     });
 
     $("#looser17,#looser18").on('click', function () {
-        secondsLeft = secondsLeft - 10
+        secondsLeft = secondsLeft - 3
         $('#time').html(secondsLeft);
         scoreup = scoreup - 1
         $('#score').html(scoreup);
@@ -168,7 +164,7 @@ $(document).ready(function () {
     });
 
     $("#looser19,#looser20").on('click', function () {
-        secondsLeft = secondsLeft - 10
+        secondsLeft = secondsLeft - 3
         $('#time').html(secondsLeft);
         scoreup = scoreup - 1
         $('#score').html(scoreup);
@@ -197,7 +193,7 @@ $(document).ready(function () {
     var timeEl = document.querySelector("#time");
     // var mainEl = document.getElementById("main");
 
-    var secondsLeft = 100;
+    var secondsLeft = 60;
     console.log('mark')
     // a working button ya thats right
     var click = document.querySelector("#tryme");
